@@ -1,14 +1,18 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+This website allows the user to create a to-do list with optional due dates. 
 
 ## Functionality
-
-Give a more detailed explanation of the project and its functionality.
+There is a button for the user to add a to-do item. Each to-do item is equipped with a checkbox to track to-do progress. 
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+This project uses: 
+-HTML
+-CSS
+-JavaScript 
+
+Javascript has been alterted to prevent hardcoding. 
 
 ## Deployment
 
