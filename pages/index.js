@@ -46,9 +46,9 @@ addTodoPopup.setEventListeners();
 
 const section = new Section({
   items: initialTodos,
+
   renderer: (item) => {
-    generateTodo(item);
-    addItem(element);
+    renderTodo(item);
   },
 
   containerSelector: ".todos__list",
@@ -92,5 +92,10 @@ initialTodos.forEach((item) => {
   renderTodo(item);
 });
 
+// section.renderItems(renderTodo(item));
+
+// section.renderItems((item) => {
+//   renderTodo(item);
+// });
 const newTodoValidator = new FormValidator(validationConfig, addTodoForm);
 newTodoValidator.enableValidation();
