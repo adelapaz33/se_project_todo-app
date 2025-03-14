@@ -16,10 +16,12 @@ const todoCounter = new TodoCounter(initialTodos, ".counter__text");
 
 function handleCheck(completed) {
   todoCounter.updateCompleted(completed);
+  console.log(completed);
 }
 function handleDelete(completed) {
   if (completed) {
     todoCounter.updateCompleted(false);
+    console.log(completed);
   }
   todoCounter.updateTotal(false);
 }
@@ -88,11 +90,11 @@ const renderTodo = (item) => {
 
 // });
 
-initialTodos.forEach((item) => {
-  renderTodo(item);
-});
+// initialTodos.forEach((item) => {
+//   renderTodo(item);
+// });
 
-// section.renderItems(renderTodo(item));
+section.renderItems();
 
 // section.renderItems((item) => {
 //   renderTodo(item);
